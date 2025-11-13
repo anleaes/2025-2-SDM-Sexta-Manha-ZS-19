@@ -8,3 +8,5 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
+        # Garante que o ID não seja modificado manualmente
+        read_only_fields = ['id']
