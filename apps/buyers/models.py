@@ -1,6 +1,7 @@
 from django.db import models
 
-# Create your models here.
+# Modelo para armazenar os dados dos Compradores 
+
 class Buyer(models.Model):
     name = models.CharField('Nome', max_length=100)
     email = models.EmailField('E-mail', unique=True)
