@@ -34,7 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'buyers.apps.BuyersConfig'
+    'buyers.apps.BuyersConfig',
     'categories.apps.CategoriesConfig',
     'rest_framework',
     'django.contrib.admin',
