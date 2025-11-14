@@ -19,5 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('categorias/', include('categories.urls', namespace='categories')),
     path('compradores/', include('buyers.urls', namespace='buyers')),
 ]
