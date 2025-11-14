@@ -4,5 +4,5 @@ from .serializer import SellerSerializer
 
 # Create your views here.
 class SellerViewSet(viewsets.ModelViewSet):
-    queryset = Seller.objects.all()
+    queryset = Seller.objects.all().order_by('name')
     serializer_class = SellerSerializer
