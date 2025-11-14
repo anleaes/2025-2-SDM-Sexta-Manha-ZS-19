@@ -1,3 +1,4 @@
+# Serializer para Compradores
 from rest_framework import serializers
 from .models import Buyer
 
