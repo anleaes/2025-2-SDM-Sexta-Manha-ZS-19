@@ -4,5 +4,5 @@ from .serializer import BuyerSerializer
 
 
 class BuyerViewSet(viewsets.ModelViewSet):
-    queryset = Buyer.objects.all()
+    queryset = Buyer.objects.all().order_by('name')
     serializer_class = BuyerSerializer
