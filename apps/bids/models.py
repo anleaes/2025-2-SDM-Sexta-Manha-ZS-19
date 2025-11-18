@@ -1,7 +1,7 @@
 from django.db import models
-# Importe os modelos necessários
 from buyers.models import Buyer
 from auctions.models import Auction
+# Modelo para o registro de Lances
 
 class Bid(models.Model):
     
