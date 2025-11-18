@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bids.apps.BidsConfig',
     'auctions.apps.AuctionsConfig',
     'reviews.apps.ReviewsConfig',
     'categoryitems.apps.CategoryitemsConfig',
