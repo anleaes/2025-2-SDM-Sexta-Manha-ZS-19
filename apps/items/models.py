@@ -8,6 +8,12 @@ class Item(models.Model):
     min_bid = models.DecimalField('Lance Mínimo', max_digits=10, decimal_places=2)
     is_active = models.BooleanField('Ativo', default=True)
 
+    categories = models.ManyToManyField(
+        Category,
+        through='categoryitems.CategoryItem', # Usa a tabela de ligação que você criou no App 5
+        verbose_name="Categorias do Item"
+    )
+
     class Meta:
         verbose_name = 'Item'
         verbose_name_plural = 'Itens'
