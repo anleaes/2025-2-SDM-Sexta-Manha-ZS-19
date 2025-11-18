@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Modelo de Itens
 class Item(models.Model):
     # Atributos do seu diagrama + is_active para fechar 4 atributos
     title = models.CharField('Título', max_length=100)
