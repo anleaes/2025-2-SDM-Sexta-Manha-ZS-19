@@ -1,7 +1,7 @@
 from django.db import models
 from categories.models import Category 
 from items.models import Item 
-
+# Modelo de Ligação M2M entre Itens e Categorias
 
 class CategoryItem(models.Model):
     # Foreign Keys (Chaves Estrangeiras)
