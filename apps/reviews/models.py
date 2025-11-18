@@ -2,6 +2,8 @@ from django.db import models
 from buyers.models import Buyer
 from sellers.models import Seller
 
+# Modelo de Avaliações entre Compradores e Vendedores
+
 class Review(models.Model):
     # Foreign Keys
     buyer = models.ForeignKey(Buyer, on_delete=models.CASCADE, verbose_name='Comprador')
