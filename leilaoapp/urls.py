@@ -23,4 +23,5 @@ urlpatterns = [
     path('compradores/', include('buyers.urls', namespace='buyers')),
     path('vendedores/', include('sellers.urls', namespace='sellers')),
     path('itens/', include('items.urls', namespace='items')),
+    path('itens_categoria/', include('categoryitems.urls', namespace='categoryitems')),
 ]
