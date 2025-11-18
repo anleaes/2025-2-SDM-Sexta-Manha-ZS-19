@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Bid
+# Serializer para a API de Lances
 
 class BidSerializer(serializers.ModelSerializer):
     class Meta:
