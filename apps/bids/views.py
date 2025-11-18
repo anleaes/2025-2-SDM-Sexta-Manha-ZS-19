@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Bid
+from .serializer import BidSerializer
 
-# Create your views here.
+
+class BidViewSet(viewsets.ModelViewSet):
+    queryset = Bid.objects.all().order_by('-amount')
+    serializer_class = BidSerializer
