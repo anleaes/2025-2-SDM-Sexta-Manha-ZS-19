@@ -3,5 +3,5 @@ from .models import Review
 from .serializer import ReviewSerializer
 
 class ReviewViewSet(viewsets.ModelViewSet):
-    queryset = Review.objects.all()
+    queryset = Review.objects.all().order_by('-date')
     serializer_class = ReviewSerializer
