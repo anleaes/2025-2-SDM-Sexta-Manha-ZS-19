@@ -4,5 +4,5 @@ from .serializer import CategoryItemSerializer
 
 
 class CategoryitemViewSet(viewsets.ModelViewSet):
-    queryset = CategoryItem.objects.all()
+    queryset = CategoryItem.objects.all().order_by('category', 'item')
     serializer_class = CategoryItemSerializer
