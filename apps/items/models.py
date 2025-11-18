@@ -7,7 +7,7 @@ class Item(models.Model):
     description = models.TextField('Descrição')
     min_bid = models.DecimalField('Lance Mínimo', max_digits=10, decimal_places=2)
     is_active = models.BooleanField('Ativo', default=True)
-
+# Campo M2M implementado
     categories = models.ManyToManyField(
         Category,
         through='categoryitems.CategoryItem', # Usa a tabela de ligação que você criou no App 5
