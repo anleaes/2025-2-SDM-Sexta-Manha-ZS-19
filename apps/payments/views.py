@@ -4,5 +4,5 @@ from .serializer import PaymentSerializer
 
 
 class PaymentViewSet(viewsets.ModelViewSet):
-    queryset = Payment.objects.all()
+    queryset = Payment.objects.all().order_by('-date')
     serializer_class = PaymentSerializer
