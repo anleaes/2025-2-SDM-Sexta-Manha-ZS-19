@@ -2,6 +2,7 @@ from django.db import models
 from buyers.models import Buyer
 from auctions.models import Auction
 
+# Modelo para o registro de Pagamentos
 
 class Payment(models.Model):
 
