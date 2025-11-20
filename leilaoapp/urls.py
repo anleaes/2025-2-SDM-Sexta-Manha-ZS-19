@@ -27,4 +27,5 @@ urlpatterns = [
     path('avaliacoes/', include('reviews.urls', namespace='reviews')),
     path('leiloes/', include('auctions.urls', namespace='auctions')),
     path('lances/', include('bids.urls', namespace='bids')),
+    path('pagamentos/', include('payments.urls', namespace='payments')),
 ]
